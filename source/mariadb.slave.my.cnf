@@ -4,7 +4,7 @@
 [mysqld]
 character-set-client-handshake=FALSE
 
-og-bin=mysql-bin    #  add
+log-bin=mysql-bin    #  add
 server-id=2         #  add
 relay-log=relaylog  #  add
 log-slave_updates=1 #  add
