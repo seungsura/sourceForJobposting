@@ -6,10 +6,10 @@ mkdir mariadb/master                   #add
 mkdir mariadb/slave                    #add
 mkdir mariadb/master/volume            #add
 mkdir mariadb/master/sql               #add
-mkdir mariadb/master/config/my.cnf     #add
+mkdir mariadb/master/config            #add
 mkdir mariadb/slave/volume             #add
 mkdir mariadb/slave/sql                #add
-mkdir mariadb/slave/config/my.cnf      #add
+mkdir mariadb/slave/config             #add
 cd backend 
 mkdir web 
 mkdir nginx
@@ -25,7 +25,10 @@ touch backend/nginx/default.dev.conf
 touch mariadb/master/.env             # add to
 touch mariadb/slave/.env              # add to 
 #touch mariadb/Dockerfile             # <- remove
-touch mariadb/sql/init.sql
+touch mariadb/slave/config/my.cnf 
+touch mariadb/master/config/my.cnf
+touch mariadb/master/sql/init.sql    #add
+touch mariadb/slave/sql/init.sql     #add
 touch frontend/nginx/Dockerfile.dev 
 touch frontend/nginx/default.dev.conf 
 touch frontend/nginx/wait.sh
