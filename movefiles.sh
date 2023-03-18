@@ -8,7 +8,7 @@ cat source/backend.nginx.default.conf > backend/nginx/default.dev.conf
 cat source/mariadb.master.env > mariadb/master/.env  #changed
 cat source/mariadb.slave.env > mariadb/slave/.env    #changed
 #cat source/mariadb.Dockerfile > mariadb/Dockerfile   #remove
-cat source/mariadb.master.my.cnf > mariadb/master/my.cnf           #changed
-cat source/mariadb.slave.my.cnf > mariadb/slave/my.cnf           #changed
+cat source/mariadb.master.my.cnf > mariadb/master/config/my.cnf           #changed
+cat source/mariadb.slave.my.cnf > mariadb/slave/config/my.cnf           #changed
 cat source/mariadb.master.sql.init.sql > mariadb/master/sql/init.sql    #changed
 cat source/mariadb.slave.sql.init.sql > mariadb/slave/sql/init.sql  #changed
