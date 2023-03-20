@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DjangoSettingsFile=/workspace/DevEnv/backend/config/
+DjangoSettingsFile=./backend/config/
 
 Secret_Key=`grep SECRET_KEY ${DjangoSettingsFile}/settings.py`
 sed -i "s@SECRET_KEY@${Secret_key}@g" source/settings.py
