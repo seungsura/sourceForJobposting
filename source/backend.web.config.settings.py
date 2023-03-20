@@ -154,7 +154,7 @@ REST_FRAMEWORK = {
 
 CORS_ORIGIN_ALLOW_ALL = True  #<- 수정필요  
 
-CSRF_TRUSTED_ORIGINS = ['http://localhost:8080']
+CSRF_TRUSTED_ORIGINS = ['http://192.168.30.55:8080','http://localhost:8080']
 
 #아래 또한 수정 필요
 CORS_ORIGIN_WHITELIST = (
