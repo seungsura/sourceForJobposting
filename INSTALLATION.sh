@@ -8,7 +8,7 @@ sh movefiles.sh
 sleep 2s
 echo start StartApp.sh
 sh StartApp.sh
-sleep 2s
+sleep 5s
 echo start Makemigration.sh
 sh Makemigration.sh
 sleep 2s
