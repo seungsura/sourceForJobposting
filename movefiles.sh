@@ -12,3 +12,6 @@ cat source/mariadb.master.my.cnf > mariadb/master/config/my.cnf           #chang
 cat source/mariadb.slave.my.cnf > mariadb/slave/config/my.cnf           #changed
 cat source/mariadb.master.sql.init.sql > mariadb/master/sql/init.sql    #changed
 cat source/mariadb.slave.sql.init.sql > mariadb/slave/sql/init.sql  #changed
+cat source/frontend.nginx.default.dev.conf > frontend/nginx/default.dev.conf
+cat source/frontend.nginx.Dockerfile.dev > frontend/nginx/Dockerfile.dev
+cat source/frontend.nginx.wait.sh > frontend/nginx/wait.sh
