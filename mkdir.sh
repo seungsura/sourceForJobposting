@@ -19,16 +19,10 @@ mkdir frontend/nginx
 mkdir frontend/web-front
 touch backend/web/.env
 touch backend/web/Dockerfile
+touch backend/web/create_superuser    #add to
 touch backend/web/requirements.txt
 touch backend/nginx/Dockerfile.dev
 touch backend/nginx/default.dev.conf
-#touch mariadb/master/.env             # add to
-#touch mariadb/slave/.env              # add to
-#touch mariadb/Dockerfile             # <- remove
-#touch mariadb/slave/config/my.cnf
-#touch mariadb/master/config/my.cnf
-#touch mariadb/master/sql/init.sql    #add
-#touch mariadb/slave/sql/init.sql     #add
 touch frontend/nginx/Dockerfile.dev
 touch frontend/nginx/default.dev.conf
 touch frontend/nginx/wait.sh
