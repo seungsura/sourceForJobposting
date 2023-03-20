@@ -12,3 +12,6 @@ sleep 2s
 echo start Makemigration.sh
 sh Makemigration.sh
 sleep 2s
+echo start Makemodelview.sh
+sh Makemodelview.sh
+sleep 2s 
