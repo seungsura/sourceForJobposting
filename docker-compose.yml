@@ -32,7 +32,7 @@ services:
     networks:
       - backend_network
   db:
-    container_name: db_master
+    container_name: db
     image: mariadb:10.7.1
     #build: ./mariadb
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
@@ -67,7 +67,7 @@ services:
       - backend_network
     restart: always # <-- always running...
     links:
-      - db_master
+      - db
       
 networks:
   backend_network:
