@@ -17,7 +17,7 @@ services:
       - CHOKIDAR_USEPOLLING=true
       - DJANGO_SETTINGS_MODULE=config.local_settings
     depends_on:
-      - db_master
+      - db
   backend-server:
     container_name: nginx-back
     build:
