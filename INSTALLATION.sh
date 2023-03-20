@@ -16,4 +16,4 @@ echo start Makemodelview.sh
 sh Makemodelview.sh
 sleep 2s 
 echo start Makefrontend.sh
-sh Makefrontend
+sh Makefrontend.sh
