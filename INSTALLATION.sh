@@ -16,7 +16,7 @@ echo start Makemodelview.sh
 sh Makemodelview.sh
 sleep 2s 
 echo start Makefrontend.sh
-sh Makefrontend
+sh Makefrontend.sh
 sleep 2s
 echo docker-compose UP!
 docker-compose up --build
