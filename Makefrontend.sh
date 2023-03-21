@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo edit docker-compose file
+cat source/docker-compose.yml > docker-compose.yml
+sleep 1s
 echo create-react-app
 docker-compose run --rm web-front sh -c "npx create-react-app ."
 sleep 5s
