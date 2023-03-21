@@ -9,7 +9,7 @@ cat source/todo.models.py > backend/web/todo/models.py
 cat source/todo.admin.py > backend/web/todo/admin.py
 
 docker-compose run --rm web sh -c "python manage.py makemigrations"
-sleep 5s
+sleep 10s
 docker-compose run --rm web sh -c "python manage.py migrate"
-sleep 5s
+sleep 10s
 docker-compose run --rm web sh -c "python create_superuser.py"
