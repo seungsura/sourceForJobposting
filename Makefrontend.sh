@@ -5,10 +5,10 @@ cat source/docker-compose.yml > docker-compose.yml
 sleep 1s
 echo create-react-app
 docker-compose run --rm web-front sh -c "echo y | npx create-react-app ."
-sleep 5s
+sleep 10s
 echo yarn install
 docker-compose run --rm web-front sh -c "yarn set version berry && rm -rf node_modules && yarn install"
-sleep 5s
+sleep 10s
 echo add next
 docker-compose run --rm web-front sh -c "yarn add next axios"
 sleep 5s
