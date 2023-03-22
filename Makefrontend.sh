@@ -13,4 +13,4 @@ echo add vscode
 docker-compose run --rm web-front sh -c "yarn dlx @yarnpkg/sdks vscode"
 cat source/frontend.webfront.package.json > frontend/web-front/package.json
 mkdir frontend/web-front/pages
-cat source/frontend.webfront.pages.index.tsx > frontend/web-front/pages/index.tsx
+cat source/frontend.webfront.pages.index.js > frontend/web-front/pages/index.js
