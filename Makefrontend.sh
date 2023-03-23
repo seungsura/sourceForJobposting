@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo create-react-app
-docker-compose run --rm web-front sh -c "npx create-react-app ."
+docker-compose run --rm web-front sh -c "echo y | npx create-react-app ."
 sleep 5s
 echo yarn install
 docker-compose run --rm web-front sh -c "yarn set version berry && rm -rf node_modules && yarn install"
