@@ -9,6 +9,9 @@ sleep 2s
 echo start StartApp.sh
 sh StartApp.sh
 sleep 5s
+echo auto_dump.sh   # add to
+sh auto_dump.sh     # add to
+sleep 2s            # add to
 echo start Makemigration.sh
 sh Makemigration.sh
 sleep 2s
