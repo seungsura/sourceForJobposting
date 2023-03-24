@@ -11,6 +11,5 @@ docker-compose run --rm web-front sh -c "yarn add next axios"
 sleep 5s
 echo add vscode
 docker-compose run --rm web-front sh -c "yarn dlx @yarnpkg/sdks vscode"
-cat source/frontend.webfront.package.json > frontend/web-front/package.json
 mkdir frontend/web-front/pages
 cat source/frontend.webfront.pages.index.js > frontend/web-front/pages/index.js
