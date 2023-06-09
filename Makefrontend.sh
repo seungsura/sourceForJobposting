@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo update code
+cp -r GroomDev/frontend/* frontend/web-front/
 echo create-react-app
 docker-compose run --rm web-front sh -c "npx create-react-app ."
 sleep 5s
