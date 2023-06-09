@@ -7,7 +7,7 @@ ALLOWED_HOSTS = ['*']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'todoList',
+        'NAME': 'Groom',
         'USER': 'user',
         'PASSWORD': 'password',
         'HOST': 'db',

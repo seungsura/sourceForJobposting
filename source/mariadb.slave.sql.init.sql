@@ -1,2 +1,2 @@
-CREATE DATABASE todoList;
+CREATE DATABASE Groom;
 CREATE user 'user' identified BY 'password';
