@@ -1,4 +1,4 @@
-docker exec db mysql -u root -ppassword -e "grant all privileges on todoList.* to user@'%' identified by 'password';"
+docker exec db mysql -u root -ppassword -e "grant all privileges on Groom.* to user@'%' identified by 'password';"
 echo "grant privileges to slave user Done."
 
 sleep 1
@@ -12,7 +12,7 @@ docker exec db mysql -u root -ppassword -e "flush privileges;"
 echo "flush privileges done"
 
 sleep 1
-#docker exec db mysql -u root -ppassword -e "use todoList; create table testtable ( no int(8), primary key (no) );"
+#docker exec db mysql -u root -ppassword -e "use Groom; create table testtable ( no int(8), primary key (no) );"
 #echo "create table done"
 
 #sleep 1
@@ -24,7 +24,7 @@ sleep 1
 
 sleep 1
 
-docker exec db mysqldump -uroot -ppassword todoList > dump.sql
+docker exec db mysqldump -uroot -ppassword Groom > dump.sql
 echo "send mysql dump to local "
 
 sleep 2
@@ -35,10 +35,10 @@ echo "copy dump.sql to db-slave"
 sleep 2
 
 
-#docker exec db_slave mysql -u root -ppassword -e "CREATE DATABASE todoList;"
+#docker exec db_slave mysql -u root -ppassword -e "CREATE DATABASE Groom;"
 #echo "start sync done"
 
-docker exec db_slave mysql -u root -ppassword -e "grant all privileges on todoList.* to user@'%' identified by 'password';"
+docker exec db_slave mysql -u root -ppassword -e "grant all privileges on Groom.* to user@'%' identified by 'password';"
 echo "grant privileges to slave user Done."
 #sleep 1
 
@@ -52,7 +52,7 @@ echo "grant privileges to slave user Done."
 
 #sleep 1
 
-docker exec db_slave mysql -u root -ppassword todoList < dump.sql
+docker exec db_slave mysql -u root -ppassword Groom < dump.sql
 echo "slave get dump.sql"
 echo "before change master to master query"
 
